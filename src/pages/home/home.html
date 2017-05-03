@@ -10,7 +10,7 @@
   <ion-list>
     <ion-item *ngFor="let feed of feeds | async" (click)="itemSelected(feed)">
       <ion-thumbnail item-left>
-          <img [src]="">
+          <img src="assets/img/{{feed.categoria}}_icone.png">
       </ion-thumbnail>
       <h2>{{feed.feed}}</h2>
       <p>{{feed.categoria}}</p>
